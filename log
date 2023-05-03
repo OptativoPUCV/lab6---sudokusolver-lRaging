@@ -13,3 +13,17 @@ sudoku.c:59:17: error: unused variable ‘new_node’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 d29d10b
+Wed 03 May 2023 01:46:43 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:59:17: error: unused variable ‘new_node’ [-Werror=unused-variable]
+   59 |           Node* new_node=copy(n);
+      |                 ^~~~~~~~
+sudoku.c:54:9: error: unused variable ‘list’ [-Werror=unused-variable]
+   54 |   List* list=createList();
+      |         ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+7da2922
