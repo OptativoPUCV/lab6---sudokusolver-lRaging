@@ -72,10 +72,9 @@ int is_valid(Node* n)
     }
 
   free(numero);
-  numero = calloc(sizeof(int), 10);
-  
   for(k=1 ; k<=9 ; k++)
     {
+      numero = calloc(sizeof(int), 10);
       for(l=1; l<=9 ; l++)
         {
           i=3*(k/3) + (l/3);
