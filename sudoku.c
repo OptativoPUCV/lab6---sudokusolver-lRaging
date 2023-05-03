@@ -83,6 +83,7 @@ int is_valid(Node* n)
           {
             if(numero[n->sudo[i][j]] == 1) return 0;
             else numero[n->sudo[i][j]] = 1;
+          }
         }
     }
   free(numero);
