@@ -73,10 +73,12 @@ int is_valid(Node* n)
     {
       for(l=1; l<=9 ; l++)
         {
-          if(n->sudo[k][l] != 0)
+          i=3*(k/3) + (l/3);
+          j=3*(k%3) + (l%3);
+          if(n->sudo[j][i] != 0)
           {
-            if(numero[n->sudo[k][l]] == 1) return 0;
-            else numero[n->sudo[k][l]] = 1;
+            if(numero[n->sudo[j][i]] == 1) return 0;
+            else numero[n->sudo[j][i]] = 1;
         }
     }
 
