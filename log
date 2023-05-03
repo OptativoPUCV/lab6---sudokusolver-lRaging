@@ -72,3 +72,8 @@ sudoku.c:65:19: error: implicit declaration of function ‘insertBack’ [-Werro
 cc1: all warnings being treated as errors
 Compilation failed
 840ee51
+Wed 03 May 2023 01:51:53 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+5444822
