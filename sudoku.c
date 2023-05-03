@@ -45,15 +45,21 @@ void print_node(Node* n){
 
 int is_valid(Node* n){
 
+      int k=4,p; 
+    for(p=0;p<9;p++){
+        int i=3*(k/3) + (p/3) ;
+        int j=3*(k%3) + (p%3) ;
+        printf("%d ",nodo->sudo[i][j]);
+        if(p%3 == 2) printf("\n");
+    }
     return 1;
 }
-
-
-List* get_adj_nodes(Node* n)
-{
+  
+List* get_adj_nodes(Node* n) 
+{ 
   List* list=createList();
-  for(int i=0; i<9 ; i++)
-    {
+  for(int i=0; i<9 ; i++)  
+    { 
       for(int j=0 ; j<9 ; j++)
         {
           if(n->sudo[i][j]==0)

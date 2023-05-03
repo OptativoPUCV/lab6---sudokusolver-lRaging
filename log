@@ -149,3 +149,21 @@ Wed 03 May 2023 02:01:17 AM UTC:
  tests:  2|4
 total_score: 15/70
 0676d9e
+Wed 03 May 2023 06:11:46 PM UTC: 
+ sudoku.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:52:22: error: ‘nodo’ undeclared (first use in this function)
+   52 |         printf("%d ",nodo->sudo[i][j]);
+      |                      ^~~~
+sudoku.c:52:22: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:51:13: error: variable ‘j’ set but not used [-Werror=unused-but-set-variable]
+   51 |         int j=3*(k%3) + (p%3) ;
+      |             ^
+sudoku.c:50:13: error: variable ‘i’ set but not used [-Werror=unused-but-set-variable]
+   50 |         int i=3*(k/3) + (p/3) ;
+      |             ^
+cc1: all warnings being treated as errors
+Compilation failed
+7110c30
