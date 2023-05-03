@@ -68,6 +68,7 @@ int is_valid(Node* n)
           }
         }
     }
+
   free(numero);
   numero = calloc(sizeof(int), 10);
   
@@ -83,7 +84,7 @@ int is_valid(Node* n)
             else numero[n->sudo[j][i]] = 1;
         }
     }
-
+  free(numero);
   
   return 1;
 }
