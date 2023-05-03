@@ -46,7 +46,7 @@ void print_node(Node* n){
 int is_valid(Node* n)
 {
   int *numero = malloc(sizeof(int)*10);
-  int i,j,k;
+  int i,j,k,l;
   for(i=0 ; i<9 ; i++)
     {
       for(j=0 ; j<9 ; j++)
@@ -64,6 +64,19 @@ int is_valid(Node* n)
             if(numero[n->sudo[j][i]] == 1) return 0;
             else numero[n->sudo[j][i]] = 1;
           }
+        }
+    }
+  free(numero);
+  numero = malloc(sizeof(int)*10);
+  
+  for(k=1 ; k<=9 ; k++)
+    {
+      for(l=1; l<=9 ; l++)
+        {
+          if(n->sudo[k][l] != 0)
+          {
+            if(numero[n->sudo[k][l]] == 1) return 0;
+            else numero[n->sudo[k][l]] = 1;
         }
     }
 
