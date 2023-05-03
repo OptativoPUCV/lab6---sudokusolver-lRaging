@@ -462,3 +462,9 @@ sudoku.c:106:19: error: ‘nuevo_nodo’ undeclared (first use in this function)
       |                   ^~~~~~~~~~
 Compilation failed
 0f794cb
+Wed 03 May 2023 06:56:01 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  6|2
+total_score: 45/70
+63cd855
