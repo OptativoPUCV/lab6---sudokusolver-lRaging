@@ -64,12 +64,11 @@ List* get_adj_nodes(Node* n)
                   nuevo_node->sudo[i][j]=k;
                   pushBack(list,nuevo_node);
                 }
-              return list;
             }
         }
     }
   
-  return NULL;
+  return list;
 }
 
 
