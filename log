@@ -167,3 +167,20 @@ sudoku.c:50:13: error: variable ‘i’ set but not used [-Werror=unused-but-set
 cc1: all warnings being treated as errors
 Compilation failed
 7110c30
+Wed 03 May 2023 06:22:30 PM UTC: 
+ sudoku.c | 20 ++++++++++++--------
+ 1 file changed, 12 insertions(+), 8 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:54:14: error: expected expression before ‘)’ token
+   54 |           if()
+      |              ^
+sudoku.c:49:11: error: unused variable ‘k’ [-Werror=unused-variable]
+   49 |   int i,j,k;
+      |           ^
+sudoku.c:48:8: error: unused variable ‘numero’ [-Werror=unused-variable]
+   48 |   int *numero = malloc(sizeof(int)*10);
+      |        ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+bbfb22d
