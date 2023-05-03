@@ -86,7 +86,6 @@ int is_valid(Node* n)
           }
         }
     }
-  free(numero);
   
   return 1;
 }
