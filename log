@@ -77,3 +77,17 @@ Wed 03 May 2023 01:51:53 AM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 5444822
+Wed 03 May 2023 01:53:35 AM UTC: 
+ sudoku.c | 10 ----------
+ 1 file changed, 10 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:55:17: error: ‘i’ undeclared (first use in this function)
+   55 |   for(int k=0 ; i<9 ; k++)
+      |                 ^
+sudoku.c:55:17: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:58:25: error: ‘j’ undeclared (first use in this function)
+   58 |     nuevo_node->sudo[i][j]=k;
+      |                         ^
+Compilation failed
+a31015d
