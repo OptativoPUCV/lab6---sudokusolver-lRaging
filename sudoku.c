@@ -79,10 +79,10 @@ int is_valid(Node* n)
         {
           i=3*(k/3) + (l/3);
           j=3*(k%3) + (l%3);
-          if(n->sudo[j][i] != 0)
+          if(n->sudo[i][j] != 0)
           {
-            if(numero[n->sudo[j][i]] == 1) return 0;
-            else numero[n->sudo[j][i]] = 1;
+            if(numero[n->sudo[i][j]] == 1) return 0;
+            else numero[n->sudo[i][j]] = 1;
         }
     }
   free(numero);
