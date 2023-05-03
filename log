@@ -61,3 +61,14 @@ sudoku.c:65:30: note: each undeclared identifier is reported only once for each 
 cc1: all warnings being treated as errors
 Compilation failed
 9529703
+Wed 03 May 2023 01:50:25 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:65:19: error: implicit declaration of function ‘insertBack’ [-Werror=implicit-function-declaration]
+   65 |                   insertBack(list,nuevo_node);
+      |                   ^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+840ee51
