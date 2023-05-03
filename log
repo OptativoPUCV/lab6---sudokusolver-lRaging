@@ -184,3 +184,25 @@ sudoku.c:48:8: error: unused variable ‘numero’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 bbfb22d
+Wed 03 May 2023 06:33:29 PM UTC: 
+ sudoku.c | 15 ++++++++++++++-
+ 1 file changed, 14 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:49:11: error: unused variable ‘k’ [-Werror=unused-variable]
+   49 |   int i,j,k;
+      |           ^
+sudoku.c: At top level:
+sudoku.c:72:3: error: expected identifier or ‘(’ before ‘return’
+   72 |   return 1;
+      |   ^~~~~~
+sudoku.c:73:1: error: expected identifier or ‘(’ before ‘}’ token
+   73 | }
+      | ^
+sudoku.c: In function ‘is_valid’:
+sudoku.c:69:5: error: control reaches end of non-void function [-Werror=return-type]
+   69 |     }
+      |     ^
+cc1: all warnings being treated as errors
+Compilation failed
+a443bd7
