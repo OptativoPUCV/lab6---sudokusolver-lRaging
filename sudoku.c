@@ -68,6 +68,7 @@ int is_valid(Node* n)
           }
         }
       free(numero);
+      numero = calloc(sizeof(int), 10);
     }
 
   free(numero);
