@@ -65,7 +65,6 @@ int is_valid(Node* n)
             else numero[n->sudo[j][i]] = 1;
           }
         }
-        }
     }
 
   
