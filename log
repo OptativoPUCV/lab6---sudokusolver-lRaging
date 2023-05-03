@@ -41,3 +41,8 @@ sudoku.c:54:9: error: unused variable ‘list’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 0d11577
+Wed 03 May 2023 01:49:52 AM UTC: 
+ sudoku.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+ tests:  0|0
+00689b5

@@ -60,8 +60,10 @@ List* get_adj_nodes(Node* n)
             {
               for(int k=0 ; i<9 ; k++)
                 {
-                  Node* new_node=copy(n);
+                  Node* nuevo_node=copy(n);
+                  nuevo_node->sudo[i][j]=k;
                 }
+              return list;
             }
         }
     }
