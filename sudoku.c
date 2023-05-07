@@ -138,7 +138,12 @@ Node* DFS(Node* initial, int* cont)
     
     List* listaNodosAdj = get_adj_nodes(nAux);
     Node* nCurrent = first(listaNodosAdj);
-    
+
+    while(nCurrent)
+    {
+      push(S, nCurrent);
+      nCurrent = next(listaNodosAdj);
+    }
   }
 
   (*cont)++;
