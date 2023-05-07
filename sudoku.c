@@ -144,8 +144,11 @@ Node* DFS(Node* initial, int* cont)
       push(S, nCurrent);
       nCurrent = next(listaNodosAdj);
     }
+    
+    free(listaNodosAdj);
   }
 
+  
   (*cont)++;
   return NULL;
 }
