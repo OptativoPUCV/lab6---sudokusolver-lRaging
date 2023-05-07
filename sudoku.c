@@ -135,8 +135,13 @@ Node* DFS(Node* initial, int* cont)
     Node* nAux = top(S);
     pop(S);
     if (is_final(nAux)) return nAux;
+    
+    List* listaNodosAdj = get_adj_nodes(nAux);
+    Node* nCurrent = first(listaNodosAdj);
+    
   }
-  
+
+  (*cont)++;
   return NULL;
 }
 
